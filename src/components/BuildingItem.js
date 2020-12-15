@@ -7,6 +7,7 @@ export class BuildingItem extends Component {
     return (
       <div>
         <p>{ id }, { address }, { boilersId }, { fullname }, { phone }</p>
+        <button onClick={this.props.editBuilding.bind(this,id)} style={btnStyle} >Edit</button>
         <button onClick={this.props.delBuilding.bind(this,id)} style={btnStyle} >x</button>
       </div>
     )
