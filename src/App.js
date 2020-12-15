@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './components/layout/Header';
 import Buildings from './components/Buildings';
 
 
@@ -36,6 +37,7 @@ delBuilding = (id) => {
   render () {
     return(
       <div className="App">
+        <Header />
         <Buildings buildings ={this.state.buildings} delBuilding={this.delBuilding}/>
       </div>
     )
